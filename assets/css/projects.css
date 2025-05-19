@@ -1,0 +1,179 @@
+
+.projects-main-content{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-direction: column;
+  }
+  
+  .image-carousel {
+    position: relative;
+    justify-content: center;
+    width: 100%;
+    height: 25rem;
+  }
+  
+  .image-placeholder img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .image-placeholder {
+    position: absolute;
+    top: 50%;
+    width: 35rem;
+    height: 20rem;
+    border-radius: 10px;
+    border: 1px solid rgb(0, 0, 0);
+    overflow: hidden;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 1);;
+    transition: transform 0.5s, left 0.5s, width 0.5s;
+    
+    animation: fade-in 1s ease-in-out;
+  }
+  
+  
+  .image-placeholder::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    z-index: 1;
+    pointer-events: none;
+    background: linear-gradient(120deg, rgba(255, 255, 255, 0.9) -0.33%, rgba(255, 255, 255, 0.03) 26.27%, rgba(255, 255, 255, 0.04) 46.88%, rgba(255, 255, 255, 0.01) 64.61%, rgba(255, 255, 255, 0.9) 96.79%);
+  }
+  
+  .image-placeholder:hover{
+    transform: scale(1.05);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.5);
+  }
+  
+  .image-placeholder.center {
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1.1);
+    height: 20rem;
+    width: 35rem;
+    z-index: 3;
+  }
+  
+  .image-placeholder.center:hover {
+    filter: saturate(1);
+  }
+  
+  .image-placeholder.left {
+    left: 25%; /* Move to the left of center */
+    transform: translate(-50%, -50%) scale(1.1);
+    height: 15rem;
+    width: 15rem;
+    z-index: 2;
+    filter: saturate(0.1)
+  }
+  .image-placeholder.right {
+    left: 75%; /* Move to the left of center */
+    transform: translate(-50%, -50%) scale(1.1);
+    height: 15rem;
+    width: 15rem;
+    z-index: 2;
+    filter: saturate(0.1)
+  }
+  
+  .image-placeholder.left-offscreen {
+    left: 10%; /* Move to the left of center */
+    transform: translate(-20%, -50%) scale(1.1);
+    height: 12rem;
+    width: 15rem;
+    z-index: 1;
+    filter: saturate(0.1)
+  }
+  
+  .image-placeholder.right-offscreen {
+    left: 90%; /* Move to the left of center */
+    transform: translate(-80%, -50%) scale(1.1);
+    height: 12rem;
+    width: 15rem;
+    z-index: 1;
+    filter: saturate(0.1)
+  }
+  
+  .image-placeholder.left-offscreen,
+  .image-placeholder.right-offscreen {
+    opacity: 30%;
+    filter: saturate(0.1);
+  }
+  
+  .image-placeholder.left:hover,
+  .image-placeholder.right:hover,
+  .image-placeholder.left-offscreen:hover,
+  .image-placeholder.right-offscreen:hover {
+      filter: saturate(1);
+      opacity: 100%;
+      transform: translate(-50%, -50%) scale(1.2); /* <-- Add scale */
+
+  }
+
+  .image-placeholder.left-offscreen:hover {
+    transform: translate(-25%, -50%) scale(1.2); /* <-- Add scale */
+
+}
+  .image-placeholder.right-offscreen:hover {
+    transform: translate(-75%, -50%) scale(1.2); /* <-- Add scale */
+
+}
+  
+  .invisible {
+    opacity: 0;
+    pointer-events: auto; /* allow click even when hidden */
+    visibility: hidden;   /* hide visually but keep layout/click */
+  }
+  
+  .project-description{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+    margin: 2rem;
+  }
+
+  .project-description h1{
+    color: white;
+    font-family: 'Afacad', sans-serif;
+    margin: 0;
+    animation: fade-in-above-description 0.5s ease-out normal forwards;
+  }
+
+  .project-description p {
+    color: white;
+    font-family: 'Afacad', sans-serif;
+    font-size: 0.5ßßßrem;
+    margin: 0;
+    opacity: 0;
+    animation: fade-in-above-description 0.5s ease-out 0.3s forwards;
+  }
+  
+  .description {
+    display: none;
+  }
+  
+  .description.active{
+    display: block;
+  }
+
+  .line-left, .line-right {
+    position: absolute;
+    top: 4rem;
+    width: 1px;
+    height: 20rem;
+    background-color: white;
+    z-index: 0;
+    justify-content: space-between;
+  }
+
+    .line-left {
+        left: 0rem;
+
+    }
+    .line-right {
+        right: 0rem;
+    }

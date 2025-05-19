@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'NATS Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../webfonts/nats-cufonfonts-webfont/NATS-Regular.woff') format('truetype');
+    }
+
+@font-face {
+    font-family: 'Blanka';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../webfonts/BLANKA_Font/Blanka-Regular.otf') format('otf');
+}
+
+@font-face {
+    font-family: 'Afacad';
+    src: url('../webfonts/Afacad/Afacad-VariableFont_wght.ttf') format('truetype');
+    font-weight: 100 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Milker';
+    src: url('../webfonts/milker/Milker.otf') format('otf');
+    font-weight: 100 900;
+    font-style: normal;
+}

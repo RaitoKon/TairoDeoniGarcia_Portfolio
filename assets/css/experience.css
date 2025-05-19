@@ -1,0 +1,16 @@
+.experience-placeholders{ 
+    display: flex;
+    flex-direction: row;
+    gap: 3rem;
+    text-align: center;
+  }
+
+.experience-placeholder-1,
+.experience-placeholder-2,
+.experience-placeholder-3{
+    width: 30rem;
+    height: 30rem;
+    box-shadow: 1rem 1rem 1rempx rgba(0, 0, 0, 10.5);
+    border-radius: 1rem;
+    padding: 1rem;
+}
