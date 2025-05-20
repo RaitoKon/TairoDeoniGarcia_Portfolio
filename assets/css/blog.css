@@ -11,50 +11,163 @@
     background-color: white;
 }
 
-.upper-content{
+.blog-content{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
     margin-top: 3rem;
-    margin-bottom: 2rem;
+    gap: 3rem;
+
 }
 
-.upper-content h1{
-    font-size: 2rem;
+.leading-content{
+  animation: fade-in-right 1s ease-in-out ;
 }
 
-.search-bar{
-    justify-content: left;
+.leading-content-description{
+    margin-top: 2rem;
+    width: 90%;
+    color: white;
+}
+
+.leading-content-description h1{
+    font-size: 3rem;
+    font-family: 'Afacad', sans-serif;
+}
+
+.leading-content-description h3{
+    font-size: 1rem;
+    font-weight: 100;
+    font-family: 'Afacad', sans-serif;
+}
+
+.img-wrapper {
+  position: relative;
+  width: 50rem;
+  border: solid 0.1rem white;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.img-wrapper img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: inherit;
+}
+
+.img-wrapper::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  border-radius: inherit;
+  background: linear-gradient(120deg, rgba(255, 255, 255, 0.6) -0.33%, rgba(255, 255, 255, 0.03) 26.27%, rgba(255, 255, 255, 0.04) 46.88%, rgba(255, 255, 255, 0.01) 64.61%, rgba(255, 255, 255, 0.2) 96.79%);
+  pointer-events: none;
+}
+
+  .glass-button p{
+    color: white;
+    margin: 0;
+  }
+
+  .glass-button{
+    width: 8rem;
+    height: 2.5rem;
+    justify-items: center;
     align-content: center;
-    color: white;
     border: solid 0.1rem white;
-    border-radius: 1rem;
-    width: 20rem;
+    border-radius: 3rem;
+    background: linear-gradient(120deg, rgba(255, 255, 255, 0.6) -0.33%, rgba(255, 255, 255, 0.03) 26.27%, rgba(255, 255, 255, 0.04) 46.88%, rgba(255, 255, 255, 0.01) 64.61%, rgba(255, 255, 255, 0.5) 96.79%);
+
+    opacity: 0;
+    animation: fade-in-right 1.5s ease-in-out forwards;
+    animation-delay: 2s;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+  }
+
+  .glass-button:hover{
+    background-color: white;
+  }
+
+  .glass-button:hover p{
+    color: black;
+  }
+
+  .glass-button:active{
+    transform: scale(0.9);
+  }
+
+  .search-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
     height: 3rem;
-}
-
-.upper-content p{
-    margin-inline: 1rem;
-}
-
-.blog-content{
-    width: 50rem;
-
-}
-
-.blog-content h1{
-    font-size: 2.5rem;
-    margin-bottom: 3rem;
-}
-
-.leading-content img{
-    height: 100%;
-    width: 100%;
     border: solid 0.1rem white;
-    border-radius: 2rem;
+    border-radius: 3rem;
+    background: linear-gradient(120deg, rgba(255, 255, 255, 0.6) -0.33%, rgba(255, 255, 255, 0.03) 26.27%, rgba(255, 255, 255, 0.04) 46.88%, rgba(255, 255, 255, 0.01) 64.61%, rgba(255, 255, 255, 0.5) 96.79%);
+
+    animation: fade-in-left 0.5s ease-in-out;
+  }
+
+  .search-bar img{
+    width: 2rem;
+    height: auto;
+    margin-inline: 1rem;
+
+    transition: transform  ease-in-out;
+  }
+
+  .search-bar img:hover{
+    transform: scale(1.1);
+  }
+
+  .search-input {
+    flex-grow: 1;
+    border: none;
+    background: transparent;
+    color: white;
+    font-family: "Afacad", sans-serif;
+    font-size: 1.2rem;
+    outline: none;
+  }
+
+  .sub-contents{  
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
 }
 
-.leading-content.description{
+  .sub-contents img{
+    height: auto;
+}
+
+  .sub-contents h1{
+    font-size: 1.5rem;
+  }
+
+  .sub-contents h3{
+    margin-block: 0.7rem;
     color: white;
+    font-family: 'Afacad', sans-serif;
+    font-size: 1rem;
+    font-weight: 100;
+  }
+
+  .other-contents {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  
+    opacity: 0; /* make it invisible initially */
+    animation: fade-in-left 1s ease-in-out forwards;
+  }
+
+.other-contents img{
+  width: 100%;
+  height: auto;
+}
+
+.other-contents .glass-button{
+  animation: fade-in-right 1s ease-in-out forwards;
+  animation-delay: 2s;
 }

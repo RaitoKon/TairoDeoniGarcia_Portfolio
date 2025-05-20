@@ -20,6 +20,7 @@ body {
   margin: 0 auto;
   width: 1200px;
   padding-inline: 7rem;
+  padding-bottom: 5rem;
 }
 
 .parent-nav{
@@ -395,4 +396,9 @@ h1{
   padding-top: 7.5rem;
   width: 5rem;
   justify-items: right;
+}
+
+.search-icon{
+  width: 0.5rem;
+  height: auto;
 }
