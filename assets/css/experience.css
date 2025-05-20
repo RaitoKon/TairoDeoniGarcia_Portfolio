@@ -3,14 +3,59 @@
     flex-direction: row;
     gap: 3rem;
     text-align: center;
+    margin-top: 6rem;
+    position: relative;
   }
 
 .experience-placeholder-1,
 .experience-placeholder-2,
 .experience-placeholder-3{
+    position: relative;
     width: 30rem;
     height: 30rem;
-    box-shadow: 1rem 1rem 1rempx rgba(0, 0, 0, 10.5);
+    box-shadow: 0rem 0rem 2rem rgba(0, 0, 0, 0.5);
     border-radius: 1rem;
     padding: 1rem;
+    color: white;
+    font-family: 'Afacad', sans-serif;
+    justify-content: space-between;
+    background: linear-gradient(120deg, rgba(255, 255, 255, 0.3) -0.33%, rgba(255, 255, 255, 0.03) 26.27%, rgba(255, 255, 255, 0.05) 46.88%, rgba(255, 255, 255, 0.01) 64.61%, rgba(255, 255, 255, 0.1) 96.79%);
+    backdrop-filter: blur(5px);
+    z-index: 1;
+  }
+
+.experience-title h2{
+    margin: 0;
+    height: 7rem;
+    align-content: center;
+    font-size: 2rem;
+    animation: fade-in-above-description 0.5s ease-out normal forwards;
+}
+
+.experience-title h6{
+    margin: 0;
+    height: 3rem;
+    font-size: 0.95rem;
+    align-content: center;
+    animation: fade-in-above-description 0.5s ease-in-out forwards;
+}
+
+ul{
+  padding-inline: 2rem;
+  padding-top: 1.5rem;
+  margin: 0;
+}
+li{
+  text-align: left;
+  margin-bottom: 1rem;
+  font-weight: 200;
+  animation: fade-in-right 1s ease-in-out;
+}
+
+.element_6 {
+  position: absolute;        /* Overlay position */
+  width: 15rem;               /* Or whatever size fits */
+  height: auto;
+  z-index: -1 ;               /* Make sure it's above the rest */
+  pointer-events: auto;      /* Optional: keep clickable */
 }

@@ -5,6 +5,11 @@
     width: 100%;
     flex-direction: column;
   }
+
+  .projects-main-content h1{
+    font-family: 'Afacad', sans-serif;
+    margin: 0;
+  }
   
   .image-carousel {
     position: relative;
