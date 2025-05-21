@@ -6,12 +6,13 @@
 
 .line-divider{
     padding: 1px;
-    width: 75rem;
+    width: 100%;
     justify-self: center;
     background-color: white;
 }
 
 .blog-content{
+    justify-content: center;
     display: flex;
     flex-direction: row;
     margin-top: 3rem;
@@ -24,8 +25,8 @@
 }
 
 .leading-content-description{
-    margin-top: 2rem;
-    width: 90%;
+    margin-top: 1.5rem;
+    width: 100%;
     color: white;
 }
 
@@ -42,9 +43,8 @@
 
 .img-wrapper {
   position: relative;
-  width: 50rem;
-  border: solid 0.1rem white;
-  border-radius: 1rem;
+  width: 100%;
+  border-radius: 0.8rem;
   overflow: hidden;
 }
 
@@ -110,7 +110,7 @@
   }
 
   .search-bar img{
-    width: 2rem;
+    width: 1.5rem;
     height: auto;
     margin-inline: 1rem;
 
@@ -139,6 +139,7 @@
 
   .sub-contents img{
     height: auto;
+    border-radius: 0.5rem;
 }
 
   .sub-contents h1{

@@ -1,0 +1,155 @@
+.contact-main-content{
+    gap: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.left-contacts{
+    justify-content: left;
+
+}
+
+.left-contacts h1{
+    margin: 0;
+    text-align: left;
+    font-size: 4rem;
+    font-family: 'Afacad', sans-serif;
+}
+
+.left-contacts h5{
+    color: white;
+    margin-top: 0.5rem;
+    text-align: left;
+    font-size: 1rem;
+    font-family: 'Afacad', sans-serif;
+    font-weight: 100;
+}
+
+.left-contacts p{
+    color: white;
+    margin-top: 1rem;
+    text-align: left;
+    font-size: 1rem;
+    font-family: 'Afacad', sans-serif;
+    font-weight: 900;
+}
+
+.icon-and-contacts div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+}
+
+.icon-and-contacts img, .social-media img{
+    width: 2rem;
+    height: auto;
+}
+
+.line-divider{
+    padding: 1px;
+    width: 100%;
+    justify-self: center;
+    background-color: white;
+    margin-block: 1rem;
+}
+
+.social-media{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.social-media-icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    gap: 1rem;
+    align-items: center;
+}
+
+.social-media p{
+    color: white;
+    margin-top: 0.95rem;
+    text-align: left;
+    font-size: 1rem;
+    font-family: 'Afacad', sans-serif;
+    font-weight: 100;
+}
+
+p a {
+  all: unset;
+  font-weight: 900;
+  text-decoration: underline;
+  pointer-events:fill;
+  cursor: pointer;
+}
+
+.message-placeholder{
+    position: relative;
+    width: 30rem;
+    box-shadow: 0rem 0rem 2rem rgba(0, 0, 0, 0.5);
+    border-radius: 1rem;
+    padding: 1rem;
+    color: white;
+    font-family: 'Afacad', sans-serif;
+    justify-content: space-between;
+    background: linear-gradient(
+        120deg,
+        rgba(255, 255, 255, 0.3) -0.33%,
+        rgba(255, 255, 255, 0.03) 26.27%,
+        rgba(255, 255, 255, 0.05) 46.88%,
+        rgba(255, 255, 255, 0.01) 64.61%,
+        rgba(255, 255, 255, 0.1) 96.79%
+    );
+    backdrop-filter: blur(5px);
+    z-index: 1;
+}
+
+.message-placeholder h1{
+    margin-block: 1rem;
+    text-align: left;
+    font-size: 1.3rem;
+    font-family: 'Afacad', sans-serif;
+    text-align: center;
+    font-weight: 500;
+}
+
+
+.text-area{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.text-entry-underline{
+    padding: 0.5px;
+    width: 100%;
+    justify-self: center;
+    background-color: white;
+    margin-block: 1rem;
+    justify-self: left;
+    margin: 0;
+}
+
+.text-entry {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.text-box{
+    border: none;
+    background: transparent;
+    color: white;
+    font-family: "Afacad", sans-serif;
+    font-size: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    margin-inline: 0.5rem;
+    outline: none;
+    width: 100%;
+
+}
+

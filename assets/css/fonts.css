@@ -9,7 +9,7 @@
     font-family: 'Blanka';
     font-style: normal;
     font-weight: normal;
-    src: url('../webfonts/BLANKA_Font/Blanka-Regular.otf') format('otf');
+    src: url('../webfonts/BLANKA_Font/Blanka-Regular.otf') format('opentype');
 }
 
 @font-face {
@@ -21,7 +21,7 @@
 
 @font-face {
     font-family: 'Milker';
-    src: url('../webfonts/milker/Milker.otf') format('otf');
+    src: url('../webfonts/milker/Milker.otf') format('opentype');
     font-weight: 100 900;
     font-style: normal;
 }

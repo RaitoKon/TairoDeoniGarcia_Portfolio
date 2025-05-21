@@ -16,9 +16,8 @@ body {
 }
 
 .container {
-  max-width: 90rem;
+  max-width: 77.5rem;
   margin: 0 auto;
-  width: 1200px;
   padding-inline: 7rem;
   padding-bottom: 5rem;
 }
@@ -78,11 +77,11 @@ a{
 }
 
 h1{
-  font-family: 'Blanka';
-  font-size: 64px;
+  font-family: 'Blanka', serif;
+  font-size: 4rem;
   color: white;
   text-align: center;
-  margin-top: 30px;
+  margin-top: 1.9rem;
 }
 
 .regular-font{
@@ -176,7 +175,6 @@ h1{
   display: flex;
   justify-content: center;
   align-items: end;
-  width: 25rem;
 }
 
 .element_1 {
@@ -210,6 +208,7 @@ h1{
   display: flex;
   position: absolute;
   width: 40rem;
+  max-width: 40rem;
   height: auto;
   z-index: 2;
   right: -6rem;
@@ -222,9 +221,10 @@ h1{
   display: none;
   position: absolute;
   width: 38rem;
+  max-width: 38rem;
   height: auto;
   z-index: 2;
-  right: -7rem;
+  right: -8rem;
   bottom: -1rem;
 
   animation: fade-in-above 1s ease-in-out;
@@ -395,7 +395,7 @@ h1{
 .button-content{
   padding-top: 7.5rem;
   width: 5rem;
-  justify-items: right;
+  justify-items: center;
 }
 
 .search-icon{
