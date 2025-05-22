@@ -15,6 +15,11 @@ body {
   background-attachment: fixed; /* optional but looks good */
 }
 
+.main-container {
+  margin: 0 auto;
+  width: 77.5rem;
+}
+
 .container {
   max-width: 77.5rem;
   margin: 0 auto;
@@ -75,6 +80,7 @@ a{
   transform: scale(1.1);
   filter: drop-shadow(0 0 5px #FFF) drop-shadow(0 0 10px #FFF);
 }
+
 
 h1{
   font-family: 'Blanka', serif;

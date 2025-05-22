@@ -81,7 +81,6 @@
 
     opacity: 0;
     animation: fade-in-right 1.5s ease-in-out forwards;
-    animation-delay: 2s;
     transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
   }
 
