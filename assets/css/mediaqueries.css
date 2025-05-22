@@ -1,0 +1,91 @@
+/* Small devices (phones, less than 600px) */
+@media screen and (max-width: 600px) {
+
+    .main-container{
+      width: 100vw;
+    }
+  .container {
+    width: 100%;
+    padding: 1rem;
+    box-sizing: border-box; /* Ensure padding doesn't increase the width */
+  }
+
+  .parent-nav {
+    flex-direction: column;
+    width: 100%;
+    gap: 1rem;
+  }
+
+  .glass-nav {
+    flex-direction: column;
+    width: 90%;
+    height: auto;
+    padding: 1rem;
+    gap: 0.3rem;
+  }
+
+  .regular-font{
+    font-size: 1.5rem !important;
+  }
+
+  .nav-logo {
+    width: 4rem;
+  }
+
+  h1 {
+    font-size: 3rem;
+    margin-top: 1rem;
+  }
+
+  .main-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  .left-content {
+    gap: 2rem;
+    align-items: center;
+  }
+
+  .left-content-text {
+    text-align: center;
+    margin-top: 2rem;
+  }
+
+  .regular-font {
+    font-size: 0.9rem;
+    text-align: center;
+  }
+
+  .my_image {
+    display: none;
+  }
+
+  .my_image2 {
+    display: block;
+    width: 90%;
+    right: 0;
+    bottom: 0;
+  }
+
+  .glass-2 {
+    width: 90%;
+    height: auto;
+    margin-top: 1rem;
+  }
+
+  .element_1,
+  .element_2,
+  .element_3 {
+    display: none;
+  }
+
+  .button-content {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    padding-top: 2rem;
+    width: 100%;
+  }
+}
