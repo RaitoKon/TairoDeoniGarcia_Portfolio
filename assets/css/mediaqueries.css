@@ -135,4 +135,35 @@
   .right-content {
     order: 2;
   }
+
+  /* PROJECTS PAGE */
+
+  .image-carousel{
+    justify-self: center;
+  }
+
+  .image-placeholder.center{
+    height: 80%;
+    width: 90%;
+  }
+
+  .line-left, .line-right{
+    display: none;
+  }
+
+  .left-and-right-button{
+    width: 100%;
+    display: flex;
+    position: absolute;
+    justify-content: space-between;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 4;
+  }
+  
+  .left-button, .right-button{
+    display: block;
+    width: 5rem;
+    height: auto;
+  }
 }

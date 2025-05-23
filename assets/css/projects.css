@@ -177,8 +177,12 @@
 
     .line-left {
         left: 0rem;
-
+      
     }
     .line-right {
         right: 0rem;
+    }
+
+    .left-button, .right-button {
+        display: none;
     }
