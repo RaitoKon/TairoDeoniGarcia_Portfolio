@@ -91,6 +91,8 @@ function updateCarousel() {
       desc.classList.remove('active');
     }
   });
+
+  updateArrows();
 }
 
 // Add click interaction
@@ -102,18 +104,49 @@ allImages.forEach((img, index) => {
 });
 
 document.addEventListener('click', (event) => {
+  const leftArrowClicked = event.target.closest('.left-button');
+  const rightArrowClicked = event.target.closest('.right-button');
+
+  if (leftArrowClicked && centerIndex > 0) {
+    centerIndex--;
+    updateCarousel();
+  } else if (rightArrowClicked && centerIndex < allImages.length - 1) {
+    centerIndex++;
+    updateCarousel();
+  }
+});
+
+function updateArrows() {
+  const leftArrow = document.querySelector('.left-button');
+  const rightArrow = document.querySelector('.right-button');
+
+  if (centerIndex <= 0) {
+    leftArrow.style.filter = 'opacity(0.3)';
+    leftArrow.style.transform = 'unset';
+  } else {
+    leftArrow.style.filter = 'opacity(1)';
+  }
+
+  if (centerIndex >= allImages.length - 1) {
+    rightArrow.style.filter = 'opacity(0.3)';
+  } else {
+    rightArrow.style.filter = 'opacity(1)';
+  }
+}
+
+
+document.addEventListener('click', (event) => {
   const isImage = event.target.closest('.image-placeholder img');
-  
-  if (!isImage) {
-    // Reset centerIndex to default (e.g. middle image)
+  const isLeftArrow = event.target.closest('.left-button');
+  const isRightArrow = event.target.closest('.right-button');
+
+  if (!isImage && !isLeftArrow && !isRightArrow) {
     centerIndex = Math.floor(allImages.length / 2);
     updateCarousel();
   }
 });
 
-document.addEventListener('keydown', (event) => {
-  center
-});
+
 
 // Initial display
 updateCarousel();

@@ -162,32 +162,148 @@
 
   /* PROJECTS PAGE */
 
-  .image-carousel{
-    justify-self: center;
+  .projects-main-content{
+    gap: 2rem;
   }
 
-  .image-placeholder.center{
-    height: 80%;
-    width: 90%;
-  }
-
-  .line-left, .line-right{
+  .line-left, .line-right {
     display: none;
   }
 
+  .image-carousel{
+    display: flex;
+    justify-items: content;
+    height: 15rem;
+    overflow: hidden;
+  }
+
+  .image-placeholder.center {
+    display: block;
+    width: 80%;
+    height: 90%;
+  }
+
+  .image-placeholder.left,
+  .image-placeholder.right,
+  .image-placeholder.left-offscreen,
+  .image-placeholder.right-offscreen {
+    width: 80%;
+    height: 90%;
+  }
+
   .left-and-right-button{
-    width: 100%;
+    width: 110%;
     display: flex;
     position: absolute;
     justify-content: space-between;
-    top: 50%;
-    transform: translateY(-50%);
+    top: 5rem;
     z-index: 4;
+    filter: drop-shadow(0 0 0.5rem rgba(0, 0, 0, 1));
   }
   
   .left-button, .right-button{
     display: block;
     width: 5rem;
     height: auto;
+
+    transition: transform 0.3s ease-in-out;
   }
+
+  .left-button:active,
+  .right-button:active {
+    transform: scale(0.8);
+    
+  }
+
+  .project-description h1{
+    font-size: 3rem;
+    line-height: 1;
+    margin-bottom: 2rem;
+  }
+
+  /* EXPERIENCE PAGE */
+
+  .experience-main-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+  
+  .experience-placeholders {
+    margin-top: 5rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  .experience-placeholder-1,
+  .experience-placeholder-2,
+  .experience-placeholder-3 {
+    width: 90%;
+    max-width: 90vw;
+    padding: 1rem;
+    box-shadow: 0rem 0rem 1rem rgba(0, 0, 0, 0.5);
+    border-radius: 1rem;
+    font-size: 0.9rem;
+    text-align: center;
+  }
+
+  /* BLOG PAGE*/
+
+  .blog-header h1{
+    text-align: center;
+  }
+
+  .blog-main-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .blog-content{
+    flex-direction: column;
+  }
+
+  .leading-content-description h1{
+    font-size: 2rem;
+  }
+
+  .search-bar{
+    margin: 0 auto;
+    width: 90%
+  }
+
+  .other-contents {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Always 2 equal columns */
+  gap: 1rem; /* Adjust spacing between items */
+  }
+
+  .sub-content-description h1{
+    font-size: 1.5rem;
+  }
+
+  /* CONTACT PAGE */
+
+  .contact-main-content {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .right-message-section{
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .message-placeholder{
+    justify-self: center;
+    width: 80%;
+  }
+
+
 }

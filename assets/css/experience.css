@@ -9,7 +9,6 @@
   gap: 3rem;
   text-align: center;
   position: relative;
-  margin-top: -131px;
 }
 
 .experience-items {
@@ -21,13 +20,14 @@
 }
 
 .element_6 {
-  width: 20vw; /* Makes it responsive to viewport width */
-  max-width: 15rem; /* Prevents it from getting too big on large screens */
+  position: relative;
+  width: 5rem; /* Makes it responsive to viewport width */
   height: auto;
   z-index: -1;
   pointer-events: none;
   animation: fade-in-above 1.5s ease-in-out;
 }
+
 .experience-placeholder-1,
 .experience-placeholder-2,
 .experience-placeholder-3 {
