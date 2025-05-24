@@ -154,8 +154,19 @@ document.addEventListener('click', (event) => {
     updateCarousel();
   }
 });
-
-
-
 // Initial display
 updateCarousel();
+
+  document.addEventListener('DOMContentLoaded', () => {
+  const form = document.getElementById('contact-form');
+  const message = document.querySelector('.message-sent');
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    console.log("Form submitted"); // 🔍 Debug log
+    form.reset();
+
+    // Show the message
+    message.style.display = 'block';
+  });
+});

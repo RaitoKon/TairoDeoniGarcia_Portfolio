@@ -180,20 +180,33 @@ p a {
     border: solid 0.1rem white;
     border-radius: 3rem;
     background: linear-gradient(120deg, rgba(255, 255, 255, 0.6) -0.33%, rgba(255, 255, 255, 0.03) 26.27%, rgba(255, 255, 255, 0.04) 46.88%, rgba(255, 255, 255, 0.01) 64.61%, rgba(255, 255, 255, 0.5) 96.79%);
+
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
   }
 
   .glass-button p{
+        font-family: 'Times New Roman', Times, serif;
+        color: white;
         margin: 0;
+        font-size: 1rem;
   }
 
   .glass-button:hover{
     background-color: white;
+
   }
 
-  .glass-button:hover{
+  .glass-button:hover p{
     color: black;
   }
 
   .glass-button:active{
     transform: scale(0.9);
+  }
+
+  .message-sent{
+    font-size: 1.5rem;
+    display:none;
+    margin: 0rem;
+    margin-top: 2rem;
   }
