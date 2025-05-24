@@ -1,9 +1,15 @@
 /* Small devices (phones, less than 600px) */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1240px) {
+   html{
+    font-size: 1.5rem;
+   }
 
-  html{
-    font-size: 0.6rem;  
-  }
+   .left-content{
+    gap: 8rem;
+   }
+}
+
+@media screen and (max-width: 600px) {
   .main-container{
       width: 100vw;
   }
@@ -30,15 +36,15 @@
   }
 
   .regular-font1{
-    font-size: 1.5rem !important;
+    font-size: 2rem !important;
   }
 
   .regular-font2{
-    margin-top: 1rem;
+    margin-top: 2rem;
   }
 
   .regular-font3{
-    margin-top: 1rem;
+    margin-top: 2rem;
   }
 
   .left-content-elements{
@@ -71,14 +77,15 @@
   }
 
   .glass-1 {
-    top: 23%;
-    height: 50vw;
-    width: 30vw;
+    top: 12%;
+    height: 60vw;
+    width: 27vw;
     max-height: 25rem;
     max-width: 12rem;
     min-width: 5rem;
-    border-radius: 2.5rem;
+    border-radius: 2rem;
   }
+
   .nav-logo {
     width: 4rem;
   }
@@ -91,7 +98,7 @@
   .main-content {
     flex-direction: column;
     align-items: center;  
-    gap: 3rem;
+    gap: 2rem;
   }
 
   .left-content {
@@ -100,9 +107,9 @@
   }
 
   .left-content-text {
-    margin-top: -5rem;
     order: 2;
     text-align: center;
+    margin: 0;
   }
 
   .regular-font {
@@ -110,36 +117,38 @@
     text-align: center;
   }
 
+  .regular-font2 {
+    margin: 0;
+  }
+
   .my_image {
     position: relative;
     right: 1rem;
-    bottom: unset;
-    width: 100%;
+    bottom: -1.0rem;
+    width: 120%;
     height: auto;
+    overflow: hidden;
   }
 
   .my_image2 {
     position: relative;
-    display: none;
     right: -0.5rem;
-    bottom: .7rem;
+    bottom: -0.6rem;
+    width: 120%;
+    height: auto;
+    overflow: hidden;
   }
 
   .glass-2 {
     position: absolute;
-    bottom: 2rem;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 25vw;
-    height: auto;
-    max-width: 10rem;
-    min-width: 5rem;
-    z-index: 1;
+    right: unset;
+    bottom: unset;
+    width: 60%;
+    height: 80%;
+    border-radius: 1.5rem;
   }
 
   .button-content {
-    margin-top: -3rem;
-    
     order: 3;
     display: flex;
     justify-content: center;
@@ -155,7 +164,8 @@
   }
 
   .right-content {
-    order: 2;
+    margin-top: 4rem;
+    order: 2; 
   }
 
   /* PROJECTS PAGE */
