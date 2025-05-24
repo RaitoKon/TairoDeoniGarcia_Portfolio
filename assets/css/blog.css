@@ -167,7 +167,7 @@
   height: auto;
 }
 
-.other-contents .glass-button{
+.other-contents.glass-button{
   animation: fade-in-right 1s ease-in-out forwards;
-  animation-delay: 2s;
+  animation-delay: 5s;
 }
