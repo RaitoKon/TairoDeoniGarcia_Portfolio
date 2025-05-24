@@ -1,3 +1,12 @@
+window.addEventListener('load', function () {
+    const preloader = document.getElementById('preloader');
+    preloader.style.opacity = '0';
+    setTimeout(() => {
+      preloader.style.display = 'none';
+    }, 500); // Give fade-out time
+  });
+
+
 document.addEventListener("DOMContentLoaded", function () {
     const button1 = document.querySelector(".glass-button-1");
     const button2 = document.querySelector(".glass-button-2");
