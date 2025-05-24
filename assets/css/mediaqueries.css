@@ -1,9 +1,5 @@
 /* Small devices (phones, less than 600px) */
 @media screen and (max-width: 1240px) {
-   html{
-    font-size: 1.5rem;
-   }
-
    .left-content{
     gap: 8rem;
    }
@@ -35,16 +31,12 @@
     gap: 0.3rem;
   }
 
-  .regular-font1{
-    font-size: 2rem !important;
-  }
-
   .regular-font2{
-    margin-top: 2rem;
+    margin-top: rem;
   }
 
   .regular-font3{
-    margin-top: 2rem;
+    margin-top: 1rem;
   }
 
   .left-content-elements{
@@ -117,26 +109,23 @@
     text-align: center;
   }
 
-  .regular-font2 {
-    margin: 0;
-  }
-
   .my_image {
     position: relative;
     right: 1rem;
-    bottom: -1.0rem;
-    width: 120%;
+    bottom: -0.7rem;
+    width: 100%;
     height: auto;
-    overflow: hidden;
+    scale: 1.2;
   }
 
   .my_image2 {
     position: relative;
     right: -0.5rem;
-    bottom: -0.6rem;
+    bottom: -0.2rem;
     width: 120%;
     height: auto;
     overflow: hidden;
+    scale: 1.2;
   }
 
   .glass-2 {
@@ -146,6 +135,7 @@
     width: 60%;
     height: 80%;
     border-radius: 1.5rem;
+    scale: 1.2;
   }
 
   .button-content {
@@ -153,7 +143,8 @@
     display: flex;
     justify-content: center;
     gap: 1rem;
-    padding-top: 0rem;
+
+    padding-top: 2rem;
     width: 100%;
   }
 
@@ -164,8 +155,9 @@
   }
 
   .right-content {
-    margin-top: 4rem;
+    margin-top: 2rem;
     order: 2; 
+    width: 100%;
   }
 
   /* PROJECTS PAGE */
