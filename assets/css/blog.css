@@ -75,6 +75,7 @@
     height: 2.5rem;
     justify-items: center;
     align-content: center;
+    text-align: center;
     border: solid 0.1rem white;
     border-radius: 3rem;
     background: linear-gradient(120deg, rgba(255, 255, 255, 0.6) -0.33%, rgba(255, 255, 255, 0.03) 26.27%, rgba(255, 255, 255, 0.04) 46.88%, rgba(255, 255, 255, 0.01) 64.61%, rgba(255, 255, 255, 0.5) 96.79%);
@@ -88,7 +89,7 @@
     background-color: white;
   }
 
-  .glass-button:hover p{
+  .glass-button:hover a{
     color: black;
   }
 
@@ -167,7 +168,13 @@
   height: auto;
 }
 
-.other-contents.glass-button{
+.other-contents.glass-button,
+.leading-content.glass-button{
   animation: fade-in-right 1s ease-in-out forwards;
-  animation-delay: 5s;
+  animation-delay: 2s;
+}
+
+.glass-button a{
+  display: unset;
+  font-family: unset;
 }
